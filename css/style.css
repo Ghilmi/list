@@ -1,0 +1,66 @@
+/* :root{
+    --main-width:300px
+} */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: rgb(187, 160, 212);
+}
+.centerFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.centerPosition{
+    position:  absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.box{
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.children{
+max-width: 500px;
+}
+.children h2{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+    padding: 8px 5px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.children h2:not(:last-child){
+    border-bottom: 1px white solid;
+}
+.children p{
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: white;
+    height: 0;
+    transition: all 0.2s ease-in-out ;
+}
+/* 
+div.parent > p{
+    color: red;
+} */
+p.activ{
+    height: auto;
+    padding: 20px 5px;
+}
+i.activ{
+    transform: rotate(180deg);
+}
+i{
+    transition: all 0.3s ease-in-out;
+}
